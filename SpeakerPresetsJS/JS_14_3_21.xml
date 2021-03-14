@@ -1,5 +1,20 @@
 <?xml version="1.0" standalone="no"?>
 <ROM IC="ADAU1451" IC_Address="1" Address_byte_length="2">
+	<beometa>
+		<metadata type="modelName" modelID="beovox-s35">Beovox S 35</metadata>
+		<metadata type="profileVersion">6</metadata>
+		<metadata type="muteRegister">464</metadata>
+		<metadata type="volumeLimitRegister">472</metadata>
+		<metadata type="volumeControlRegister">471</metadata>
+		<metadata type="channelSelectRegister">478</metadata>
+		<metadata type="enableSPDIFRegister">469</metadata>
+		<metadata type="directSlaveSelectRegister">479</metadata>
+		<metadata type="slaveChannelSelectRegister">477</metadata>
+		<metadata type="customFilterRegisterBankLeft">36/50</metadata>
+		<metadata type="customFilterRegisterBankRight">86/50</metadata>
+		<metadata type="crossoverBands">2</metadata>
+		<metadata type="checksum">18454E5C3033E17F5A11937BF90ED7E4</metadata>
+	</beometa>
   <dateTime>2021-03-14T19:44:04.1097913Z</dateTime>
   <version>3.14.2.1690</version>
   <page modetype="Mode 0">
