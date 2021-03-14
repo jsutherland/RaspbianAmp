@@ -1,0 +1,49 @@
+ADAU145X Assembler, Analog Devices Inc.
+Version: 4.6.0,1809  (built 12/23/2020)
+
+##### Compile Started: Sunday, March 14, 2021 7:42:37 PM #####
+ADAU145X Assembler, Analog Devices Inc.
+Version: 4.6.0,1809  (built 12/23/2020)
+
+##### Compile Started: Sunday, March 14, 2021 7:42:37 PM #####
+##### Compile succeeded:  0 errors, 0 warnings #####
+
+##### Summary #####
+DM0 RAM used:       00128    (of 8192)
+DM1 RAM used:       00123    (of 8192)
+PM  RAM used(Data): 00000    (of 8192)
+PM  RAM used(Inst): 00338    (of 8192) 251 instructions (32bit: 164  64bit: 87)
+Total PM used:      00338    (of 8192)
+
+--------------------------------------------------------------------------------------
+STREAM                        Inst      Inst      DM0     DM1     PM
+Instance                      (cycles)  (size)    
+--------------------------------------------------------------------------------------
+STACK                          -         -        16      0       0       
+Multiple 1                    32        44        12      4       0
+FRAMEWORK                     54        35        8       7       0
+Param EQ1_5                   18        25        25      26      0
+Param EQ1_6                   18        25        25      26      0
+Single 1                      15        18        3       4       0
+Param EQ1_3                   9         16        5       10      0
+Param EQ1_2                   9         16        5       10      0
+Param EQ1_4                   9         16        5       10      0
+Param EQ1                     9         16        5       10      0
+Mute1_2                       10        13        3       2       0
+Mute1                         10        13        3       2       0
+AsrcIn1                       8         8         0       4       0
+NxM Mixer2                    6         7         2       0       0
+NxM Mixer1                    6         7         2       0       0
+S Splitter3                   7         7         1       1       0
+S Splitter1                   7         7         1       1       0
+Mg1                           6         6         2       1       0
+1 X RTA1                      3         3         1       1       0
+Output3                       2         2         0       0       0
+Output1                       2         2         0       0       0
+Output2                       2         2         0       0       0
+Output4                       2         2         0       0       0
+--------------------------------------------------------------------------------------
+Total                         244       290       124     119     0
+--------------------------------------------------------------------------------------
+(% Fs=48.0kHz)                4%        4%        2%      2%      0%
+

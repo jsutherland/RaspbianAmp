@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- *
+ * This software is distributed in the hope that it will be useful,
+ * but is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+ * CONDITIONS OF ANY KIND, without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * This software may only be used to program products purchased from
+ * Analog Devices for incorporation by you into audio products that
+ * are intended for resale to audio product end users. This software
+ * may not be distributed whole or in any part to third parties.
+ *
+ * Copyright © 2021 Analog Devices, Inc. All rights reserved.
+ */
+-->
+<!--NetList XML file-->
+<NetList>
+    <IC name=" IC 1 " type="ADAU1451">
+        <Schematic>
+            <Algorithm name="SwitchAlg321" friendlyname="OnOff 32_0 Output " cell="Hardware Mute.Mute " location="{X=213, Y=160} " Growth="0 " GrowthB="0">
+                <Link pin="O_C682_A0_P1_out" dir="out" link="Link0" />
+            </Algorithm>
+            <Algorithm name="RegisterReadAlg2" friendlyname="Register Read " cell="Input Detection.ASRC Lock " location="{X=51, Y=268} " Growth="1 " GrowthB="0">
+                <Link pin="O_C248_A0_P1_out" dir="out" link="Link22" />
+            </Algorithm>
+            <Algorithm name="DCInpAlg145X8" friendlyname="DC-Input " cell="Input Detection.Pi ASRC Compare " location="{X=37, Y=171} " Growth="0 " GrowthB="0">
+                <Link pin="O_C266_A0_P1_out" dir="out" link="Link3" />
+            </Algorithm>
+            <Algorithm name="DCInpAlg145X9" friendlyname="DC-Input " cell="Input Detection.SPDIF ASRC Compare " location="{X=38, Y=335} " Growth="0 " GrowthB="0">
+                <Link pin="O_C269_A0_P1_out" dir="out" link="Link2" />
+            </Algorithm>
+            <Algorithm name="DCInpAlg145X10" friendlyname="DC-Input " cell="Input Detection.DC3 " location="{X=410, Y=54} " Growth="0 " GrowthB="0">
+                <Link pin="O_C622_A0_P1_out" dir="out" link="Link10" />
+            </Algorithm>
+            <Algorithm name="SwitchAlg323" friendlyname="OnOff 32_0 Output " cell="Input Detection.SPDIF Enabled " location="{X=453, Y=302} " Growth="0 " GrowthB="0">
+                <Link pin="O_C626_A0_P1_out" dir="out" link="Link11" />
+            </Algorithm>
+            <Algorithm name="DCInpAlg145X11" friendlyname="DC-Input " cell="Input Detection.Pi priority " location="{X=411, Y=-51.5} " Growth="0 " GrowthB="0">
+                <Link pin="O_C671_A0_P1_out" dir="out" link="Link12" />
+            </Algorithm>
+            <Algorithm name="AsrcInSigma300Alg1" friendlyname="From ASRC " cell="AsrcIn1 " location="{X=-34, Y=180} " Growth="16 " GrowthB="0">
+                <Link pin="O_C20_A0_P1_out" dir="out" link="Link24" />
+                <Link pin="O_C20_A0_P2_out" dir="out" link="Link23" />
+                <Link pin="O_C20_A0_P15_out" dir="out" link="Link26" />
+                <Link pin="O_C20_A0_P16_out" dir="out" link="Link25" />
+            </Algorithm>
+            <Algorithm name="LogicAlgBitSigma3002" friendlyname="LOGICbit " cell="Input Detection.Logic4 " location="{X=194, Y=323} " Growth="0 " GrowthB="0">
+                <Link pin="I_C284_A0_P1_in" dir="in" link="Link2" />
+                <Link pin="I_C284_A0_P2_in" dir="in" link="Link22" />
+                <Link pin="O_C284_A0_P3_out" dir="out" link="Link5" />
+            </Algorithm>
+            <Algorithm name="LogicAlgBitSigma3003" friendlyname="LOGICbit " cell="Input Detection.Logic5 " location="{X=193, Y=221} " Growth="0 " GrowthB="0">
+                <Link pin="I_C307_A0_P1_in" dir="in" link="Link3" />
+                <Link pin="I_C307_A0_P2_in" dir="in" link="Link22" />
+                <Link pin="O_C307_A0_P3_out" dir="out" link="Link4" />
+            </Algorithm>
+            <Algorithm name="BufferAlgSigma3001" friendlyname="LBuffer " cell="Input Detection.Buff1 " location="{X=295, Y=216} " Growth="1 " GrowthB="0">
+                <Link pin="I_C503_A0_P1_in" dir="in" link="Link4" />
+                <Link pin="O_C503_A0_P2_out" dir="out" link="Link8" />
+            </Algorithm>
+            <Algorithm name="BufferAlgSigma3002" friendlyname="LBuffer " cell="Input Detection.Buff1_2 " location="{X=295, Y=318} " Growth="1 " GrowthB="0">
+                <Link pin="I_C516_A0_P1_in" dir="in" link="Link5" />
+                <Link pin="O_C516_A0_P2_out" dir="out" link="Link15" />
+            </Algorithm>
+            <Algorithm name="SignalDetectAlgS3002" friendlyname="Signal Detection Algorihm " cell="Input Detection.Pi Signal Detect " location="{X=190, Y=60} " Growth="2 " GrowthB="0">
+                <Link pin="I_C523_A0_P2_in" dir="in" link="Link24" />
+                <Link pin="I_C523_A0_P3_in" dir="in" link="Link23" />
+                <Link pin="O_C523_A0_P1_out" dir="out" link="Link7" />
+            </Algorithm>
+            <Algorithm name="SignalDetectAlgS3003" friendlyname="Signal Detection Algorihm " cell="Input Detection.SPDIF Signal Detect " location="{X=191, Y=436} " Growth="2 " GrowthB="0">
+                <Link pin="I_C534_A0_P2_in" dir="in" link="Link26" />
+                <Link pin="I_C534_A0_P3_in" dir="in" link="Link25" />
+                <Link pin="O_C534_A0_P1_out" dir="out" link="Link6" />
+            </Algorithm>
+            <Algorithm name="ZeroCompareAlgSigma3005" friendlyname="ZeroCompare " cell="Input Detection.ZeroComp3 " location="{X=295, Y=451} " Growth="1 " GrowthB="0">
+                <Link pin="I_C548_A0_P1_in" dir="in" link="Link6" />
+                <Link pin="O_C548_A0_P2_out" dir="out" link="Link14" />
+            </Algorithm>
+            <Algorithm name="ZeroCompareAlgSigma3006" friendlyname="ZeroCompare " cell="Input Detection.ZeroComp3_2 " location="{X=294, Y=75} " Growth="1 " GrowthB="0">
+                <Link pin="I_C571_A0_P1_in" dir="in" link="Link7" />
+                <Link pin="O_C571_A0_P2_out" dir="out" link="Link9" />
+            </Algorithm>
+            <Algorithm name="LogicAlgstSigma3004" friendlyname="LOGICst " cell="Input Detection.Pi on " location="{X=414, Y=150} " Growth="0 " GrowthB="0">
+                <Link pin="I_C605_A0_P1_in" dir="in" link="Link9" />
+                <Link pin="I_C605_A0_P2_in" dir="in" link="Link8" />
+                <Link pin="O_C605_A0_P3_out" dir="out" link="Link27" />
+            </Algorithm>
+            <Algorithm name="LogicAlgstSigma3002" friendlyname="LOGICst " cell="Input Detection.SPDIF On " location="{X=412, Y=397} " Growth="0 " GrowthB="0">
+                <Link pin="I_C8_A0_P1_in" dir="in" link="Link15" />
+                <Link pin="I_C8_A0_P2_in" dir="in" link="Link14" />
+                <Link pin="O_C8_A0_P3_out" dir="out" link="Link28" />
+            </Algorithm>
+            <Algorithm name="MultAlg145X1" friendlyname="Multiply " cell="Input Detection.X1 " location="{X=556, Y=113} " Growth="0 " GrowthB="0">
+                <Link pin="I_C652_A0_P1_in" dir="in" link="Link12" />
+                <Link pin="I_C652_A0_P2_in" dir="in" link="Link27" />
+                <Link pin="O_C652_A0_P3_out" dir="out" link="Link13" />
+            </Algorithm>
+            <Algorithm name="SigmaADAU145xCondAlg23" friendlyname="Condition " cell="Input Detection.ABCD 3 " location="{X=756, Y=233} " Growth="0 " GrowthB="0">
+                <Link pin="I_C632_A0_P1_in" dir="in" link="Link13" />
+                <Link pin="I_C632_A0_P2_in" dir="in" link="Link28" />
+                <Link pin="I_C632_A0_P3_in" dir="in" link="Link10" />
+                <Link pin="I_C632_A0_P4_in" dir="in" link="Link11" />
+                <Link pin="O_C632_A0_P5_out" dir="out" link="Link29" />
+            </Algorithm>
+            <Algorithm name="DCinputmuxAlgSigma3001" friendlyname="Mono Nx1 " cell="Input Detection.MX2 " location="{X=950, Y=153} " Growth="2 " GrowthB="0">
+                <Link pin="I_C656_A0_P2_in" dir="in" link="Link29" />
+                <Link pin="I_C656_A0_P3_in" dir="in" link="Link27" />
+                <Link pin="I_C656_A0_P4_in" dir="in" link="Link28" />
+                <Link pin="O_C656_A0_P1_out" dir="out" link="Link20" />
+            </Algorithm>
+            <Algorithm name="DCinputmux_stereoHW_AlgSigma3001" friendlyname="Stereo Nx1 Hardware Slew " cell="Input Select " location="{X=248, Y=228} " Growth="2 " GrowthB="0">
+                <Link pin="I_C553_A0_P3_in" dir="in" link="Link29" />
+                <Link pin="I_C553_A0_P4_in" dir="in" link="Link24" />
+                <Link pin="I_C553_A0_P5_in" dir="in" link="Link23" />
+                <Link pin="I_C553_A0_P6_in" dir="in" link="Link26" />
+                <Link pin="I_C553_A0_P7_in" dir="in" link="Link25" />
+                <Link pin="O_C553_A0_P1_out" dir="out" link="Link30" />
+                <Link pin="O_C553_A0_P2_out" dir="out" link="Link32" />
+            </Algorithm>
+            <Algorithm name="ZeroCompareAlgSigma3001" friendlyname="ZeroCompare " cell="Hardware Mute.ZeroComp1 " location="{X=184, Y=76} " Growth="1 " GrowthB="0">
+                <Link pin="I_C684_A0_P1_in" dir="in" link="Link20" />
+                <Link pin="O_C684_A0_P2_out" dir="out" link="Link1" />
+            </Algorithm>
+            <Algorithm name="EQS300MultiS3" friendlyname="Multi-Channel - Single Precision " cell="Custom Filtering.IIR_L " location="{X=243, Y=130} " Growth="10 " GrowthB="1">
+                <Link pin="I_C483_A0_P1_in" dir="in" link="Link30" />
+                <Link pin="O_C483_A0_P2_out" dir="out" link="Link31" />
+            </Algorithm>
+            <Algorithm name="EQS300MultiS4" friendlyname="Multi-Channel - Single Precision " cell="Custom Filtering.IIR_R " location="{X=243, Y=212} " Growth="10 " GrowthB="1">
+                <Link pin="I_C490_A0_P1_in" dir="in" link="Link32" />
+                <Link pin="O_C490_A0_P2_out" dir="out" link="Link33" />
+            </Algorithm>
+            <Algorithm name="LogicAlgstSigma3001" friendlyname="LOGICst " cell="Hardware Mute.Logic1 " location="{X=305, Y=121} " Growth="0 " GrowthB="0">
+                <Link pin="I_C689_A0_P1_in" dir="in" link="Link1" />
+                <Link pin="I_C689_A0_P2_in" dir="in" link="Link0" />
+                <Link pin="O_C689_A0_P3_out" dir="out" link="Link21" />
+            </Algorithm>
+            <Algorithm name="SWGainADAU145XAlg1" friendlyname="Gain (RC accurate SW slew) " cell="MasterVol " location="{X=515, Y=152} " Growth="2 " GrowthB="0">
+                <Link pin="I_C144_A0_P1_in" dir="in" link="Link31" />
+                <Link pin="I_C144_A0_P3_in" dir="in" link="Link33" />
+                <Link pin="O_C144_A0_P2_out" dir="out" link="Link19" />
+                <Link pin="O_C144_A0_P4_out" dir="out" link="Link18" />
+            </Algorithm>
+            <Algorithm name="GPOAlg3001" friendlyname="General Purpose Output " cell="Hardware Mute.Amplifier Mute " location="{X=502, Y=173} " Growth="0 " GrowthB="0">
+                <Link pin="I_C702_A0_P1_in" dir="in" link="Link21" />
+            </Algorithm>
+            <Algorithm name="GPOAlg3002" friendlyname="General Purpose Output " cell="Hardware Mute.LED Indicator " location="{X=504, Y=81} " Growth="0 " GrowthB="0">
+                <Link pin="I_C706_A0_P1_in" dir="in" link="Link21" />
+            </Algorithm>
+            <Algorithm name="SWGainADAU145XAlg2" friendlyname="Gain (RC accurate SW slew) " cell="MasterLimit " location="{X=587, Y=152} " Growth="2 " GrowthB="0">
+                <Link pin="I_C554_A0_P1_in" dir="in" link="Link19" />
+                <Link pin="I_C554_A0_P3_in" dir="in" link="Link18" />
+                <Link pin="O_C554_A0_P2_out" dir="out" link="Link36" />
+                <Link pin="O_C554_A0_P4_out" dir="out" link="Link37" />
+            </Algorithm>
+            <Algorithm name="SingleCtrlMixerS3002" friendlyname="Signal MixerC " cell="Direct/Slave Select.Mg2 " location="{X=353, Y=189} " Growth="2 " GrowthB="0">
+                <Link pin="I_C358_A0_P2_in" dir="in" link="Link36" />
+                <Link pin="I_C358_A0_P3_in" dir="in" link="Link37" />
+                <Link pin="O_C358_A0_P1_out" dir="out" link="Link38" />
+            </Algorithm>
+            <Algorithm name="SingleCtrlMixerS3001" friendlyname="Signal MixerC " cell="Channel Select.Mg1 " location="{X=273, Y=243} " Growth="2 " GrowthB="0">
+                <Link pin="I_C228_A0_P2_in" dir="in" link="Link36" />
+                <Link pin="I_C228_A0_P3_in" dir="in" link="Link37" />
+                <Link pin="O_C228_A0_P1_out" dir="out" link="Link41" />
+            </Algorithm>
+            <Algorithm name="stereomuxSigma300ns3" friendlyname="Stereo " cell="Direct/Slave Select.Nx2-3 " location="{X=486, Y=107} " Growth="4 " GrowthB="0">
+                <Link pin="I_C331_A0_P3_in" dir="in" link="Link36" />
+                <Link pin="I_C331_A0_P4_in" dir="in" link="Link37" />
+                <Link pin="I_C331_A0_P5_in" dir="in" link="Link36" />
+                <Link pin="I_C331_A0_P6_in" dir="in" link="Link36" />
+                <Link pin="I_C331_A0_P7_in" dir="in" link="Link37" />
+                <Link pin="I_C331_A0_P8_in" dir="in" link="Link37" />
+                <Link pin="I_C331_A0_P9_in" dir="in" link="Link38" />
+                <Link pin="I_C331_A0_P10_in" dir="in" link="Link38" />
+                <Link pin="O_C331_A0_P1_out" dir="out" link="Link16" />
+                <Link pin="O_C331_A0_P2_out" dir="out" link="Link17" />
+            </Algorithm>
+            <Algorithm name="stereomuxSigma300ns1" friendlyname="Stereo " cell="Channel Select.Nx2-1 " location="{X=389, Y=99} " Growth="4 " GrowthB="0">
+                <Link pin="I_C167_A0_P3_in" dir="in" link="Link36" />
+                <Link pin="I_C167_A0_P4_in" dir="in" link="Link37" />
+                <Link pin="I_C167_A0_P5_in" dir="in" link="Link36" />
+                <Link pin="I_C167_A0_P6_in" dir="in" link="Link36" />
+                <Link pin="I_C167_A0_P7_in" dir="in" link="Link37" />
+                <Link pin="I_C167_A0_P8_in" dir="in" link="Link37" />
+                <Link pin="I_C167_A0_P9_in" dir="in" link="Link41" />
+                <Link pin="I_C167_A0_P10_in" dir="in" link="Link41" />
+                <Link pin="O_C167_A0_P1_out" dir="out" link="Link39" />
+                <Link pin="O_C167_A0_P2_out" dir="out" link="Link40" />
+            </Algorithm>
+            <Algorithm name="stereomuxSigma300ns2" friendlyname="Stereo " cell="Direct/Slave Select.Nx2-2 " location="{X=666, Y=194} " Growth="2 " GrowthB="0">
+                <Link pin="I_C55_A0_P3_in" dir="in" link="Link16" />
+                <Link pin="I_C55_A0_P4_in" dir="in" link="Link17" />
+                <Link pin="I_C55_A0_P5_in" dir="in" link="Link26" />
+                <Link pin="I_C55_A0_P6_in" dir="in" link="Link25" />
+                <Link pin="O_C55_A0_P1_out" dir="out" link="Link34" />
+                <Link pin="O_C55_A0_P2_out" dir="out" link="Link35" />
+            </Algorithm>
+            <Algorithm name="ICSigma300SpdifOut2" friendlyname="SPDIF output " cell="SpdifOut2 " location="{X=1015, Y=461} " Growth="0 " GrowthB="0">
+                <Link pin="I_C109_A0_P1_in" dir="in" link="Link35" />
+            </Algorithm>
+            <Algorithm name="ICSigma300SpdifOut1" friendlyname="SPDIF output " cell="SpdifOut1 " location="{X=1015, Y=410} " Growth="0 " GrowthB="0">
+                <Link pin="I_C107_A0_P1_in" dir="in" link="Link34" />
+            </Algorithm>
+            <Algorithm name="EQS300MultiS2" friendlyname="Multi-Channel - Single Precision " cell="Loudspeaker EQ.EQ_D " location="{X=250, Y=58} " Growth="15 " GrowthB="1">
+                <Link pin="I_C409_A0_P1_in" dir="in" link="Link40" />
+                <Link pin="O_C409_A0_P2_out" dir="out" link="Link42" />
+            </Algorithm>
+            <Algorithm name="EQS300MultiS1" friendlyname="Multi-Channel - Single Precision " cell="Loudspeaker EQ.EQ_B " location="{X=249, Y=285} " Growth="15 " GrowthB="1">
+                <Link pin="I_C382_A0_P1_in" dir="in" link="Link40" />
+                <Link pin="O_C382_A0_P2_out" dir="out" link="Link44" />
+            </Algorithm>
+            <Algorithm name="EQS300MultiS6" friendlyname="Multi-Channel - Single Precision " cell="Loudspeaker EQ.EQ_C " location="{X=251, Y=143} " Growth="15 " GrowthB="1">
+                <Link pin="I_C445_A0_P1_in" dir="in" link="Link39" />
+                <Link pin="O_C445_A0_P2_out" dir="out" link="Link43" />
+            </Algorithm>
+            <Algorithm name="EQS300MultiS5" friendlyname="Multi-Channel - Single Precision " cell="Loudspeaker EQ.EQ_A " location="{X=250, Y=372} " Growth="15 " GrowthB="1">
+                <Link pin="I_C439_A0_P1_in" dir="in" link="Link39" />
+                <Link pin="O_C439_A0_P2_out" dir="out" link="Link45" />
+            </Algorithm>
+            <Algorithm name="ICOutADAU145X2" friendlyname="Output " cell="D 30W " location="{X=1017, Y=113} " Growth="1 " GrowthB="0">
+                <Link pin="I_C2_A0_P1_in" dir="in" link="Link42" />
+            </Algorithm>
+            <Algorithm name="ICOutADAU145X1" friendlyname="Output " cell="C 30W " location="{X=1017, Y=160} " Growth="1 " GrowthB="0">
+                <Link pin="I_C0_A0_P1_in" dir="in" link="Link43" />
+            </Algorithm>
+            <Algorithm name="ICOutADAU145X3" friendlyname="Output " cell="B 60W " location="{X=1015, Y=269} " Growth="1 " GrowthB="0">
+                <Link pin="I_C4_A0_P1_in" dir="in" link="Link44" />
+            </Algorithm>
+            <Algorithm name="ICOutADAU145X4" friendlyname="Output " cell="A 60W " location="{X=1015, Y=316} " Growth="1 " GrowthB="0">
+                <Link pin="I_C6_A0_P1_in" dir="in" link="Link45" />
+            </Algorithm>
+        </Schematic>
+    </IC>
+</NetList>
